@@ -1,0 +1,71 @@
+.confirmPayment__container {
+   width: 100%;
+   min-height: 80vh;
+
+   transition: transform 0.4s;
+  animation-name: slideToLeft;
+  animation-duration: 1s;
+}
+
+.confirmPayment__headerBox {
+   display: flex;
+   justify-content: space-between;
+   background: #2F80ED;
+   color: white;
+   padding: 10px 30px;
+   border-radius: 16px 10px 0px 0px;
+}
+
+.confirmPayment__body {
+   display: flex;
+   justify-content: space-between;
+   color: #4E598C;
+   background: white;
+   padding: 15px 30px;
+}
+
+.confirmPayment__total {
+   display: flex;
+   justify-content: space-between;
+   color: #4E598C;
+   background: white;
+   padding: 15px 30px;
+   border-bottom: 1px solid gray;
+   border-radius: 0px 0px 16px 10px;
+}
+
+.confirmPayment__body span {
+   color: black;
+}
+
+.billingInfo__btnPay {
+   background: linear-gradient(180deg, #F2C94C 0%, #F2994A 100%);
+   font-size: 20px;
+   line-height: 30px;
+   color: #F7F7FF;
+   padding: 5px 50px;
+   outline: none;
+   border-radius: 10px;
+   border: none;
+   margin-right: 20px;
+   cursor: pointer;
+}
+
+.billingInfo__btnCancel {
+   color: #4E598C;
+   border: none;
+   outline: none;
+   cursor: pointer;
+}
+
+@keyframes slideToLeft {
+   0% {
+     opacity: 0;
+     transform: translateX(100px);
+   }
+ 
+   100% {
+     opacity: 1;
+     transform: translate(0);
+   }
+ }

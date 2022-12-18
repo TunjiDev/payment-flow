@@ -1,0 +1,73 @@
+.personalInfo__form {
+   width: 100%;
+   min-height: 80vh;
+
+   transition: transform 0.4s;
+  animation-name: slideToLeft;
+  animation-duration: 1s;
+}
+
+.personalInfo__form p {
+   margin-bottom: 10px;
+}
+
+.personalInfo__inputLabelsnText {
+   display: inline-block;
+   margin-bottom: 10px;
+   font-weight: bold;
+}
+
+.personalInfo__nameInput, .personalInfo__emailInput, .personalInfo__address1Input, 
+.personalInfo__address2Input, .personalInfo__lgaInput, .personalInfo__stateInput {
+   border: 1px solid #4E598C;
+   border-radius: 10px;
+   padding: 10px 20px;
+   width: 100%;
+   outline: none;
+}
+
+.personalInfo__stateInput {
+   cursor: pointer;
+}
+
+.lgaxstateContainer {
+display: flex;
+justify-content: space-between;
+}
+
+.personalInfo__btnNext {
+   background: linear-gradient(180deg, #F2C94C 0%, #F2994A 100%);
+   font-size: 20px;
+   line-height: 30px;
+   color: #F7F7FF;
+   padding: 5px 50px;
+   outline: none;
+   border-radius: 10px;
+   border: none;
+   margin-right: 20px;
+   cursor: pointer;
+}
+
+.personalInfo__btnCancel {
+   color: #4E598C;
+   border: none;
+   outline: none;
+   cursor: pointer;
+}
+
+.personalInfo__errorMsg {
+   color: red;
+   font-weight: bold;
+}
+
+@keyframes slideToLeft {
+   0% {
+     opacity: 0;
+     transform: translateX(100px);
+   }
+ 
+   100% {
+     opacity: 1;
+     transform: translate(0);
+   }
+ }
