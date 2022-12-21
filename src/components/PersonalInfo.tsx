@@ -1,6 +1,6 @@
 import React, { useState, useRef, useContext } from "react";
 
-import { PaymentContext } from "../store/PaymentContext";
+import PaymentContext from "../store/PaymentContext";
 
 import styles from "./PersonalInfo.module.css";
 

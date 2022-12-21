@@ -3,7 +3,7 @@ import PersonalInfo from "./components/PersonalInfo";
 import BillingInfo from "./components/BillingInfo";
 import ConfirmPayment from "./components/ConfirmPayment";
 import Modal from "./components/Modal";
-import { PaymentContext } from "./store/PaymentContext";
+import PaymentContext from "./store/PaymentContext";
 import styles from "./App.module.css";
 
 function App() {
